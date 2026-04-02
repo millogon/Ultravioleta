@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noticias — Ultravioleta S.A.</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="nav-placeholder"></div>
+
+<div class="page-hero">
+  <div class="section-label">// Medios y Prensa</div>
+  <h1 class="section-title" style="font-size:clamp(3rem,7vw,5rem);">Noticias</h1>
+  <p style="color:var(--text-muted);max-width:600px;margin:1rem auto 0;line-height:1.7;">Lo que dicen los medios sobre Ultravioleta S.A. y su tecnología de esterilización UV.</p>
+</div>
+
+<div class="uv-divider"></div>
+
+<div class="section">
+  <div class="section-label">// Artículo Destacado</div>
+  <h2 class="section-title">Entrevistas y Medios</h2>
+  <div class="section-line"></div>
+
+  <!-- MAIN ARTICLE -->
+  <div style="background:var(--dark2);border:1px solid var(--glass-border);padding:3rem;margin-bottom:4rem;">
+    <div style="display:flex;gap:1rem;align-items:center;margin-bottom:2rem;">
+      <div style="background:rgba(196,48,0,0.15);border:1px solid rgba(196,48,0,0.3);padding:0.3rem 1rem;font-family:'Space Mono',monospace;font-size:0.65rem;letter-spacing:3px;color:#FF6040;">EMPRENDEDORES</div>
+      <div style="font-family:'Space Mono',monospace;font-size:0.65rem;letter-spacing:2px;color:var(--text-muted);">REVISTA AMERICA ECONOMÍA</div>
+    </div>
+
+    <h2 style="font-family:'Bebas Neue',sans-serif;font-size:clamp(2rem,5vw,3.5rem);letter-spacing:3px;color:var(--white);margin-bottom:2rem;line-height:1;">"SE LE PRENDIÓ EL FOCO"</h2>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start;">
+      <div>
+        <img src="images/articulo.jpg" alt="Artículo América Economía" class="article-img" style="width:100%;max-width:450px;height:auto;display:block;">
+        <div style="margin-top:1rem;padding:1rem;background:var(--dark3);border-left:3px solid var(--uv-bright);">
+          <p style="font-family:'Space Mono',monospace;font-size:0.7rem;color:var(--text-muted);letter-spacing:1px;">Patricio González con su lámpara maravillosa — Foto: América Economía</p>
+        </div>
+      </div>
+      <div>
+        <p style="color:var(--text-muted);line-height:1.9;font-size:0.95rem;margin-bottom:1.5rem;">
+          A primera vista parece la espada de la guerra de las galaxias. Hay quienes han dicho "¡qué lindo el toallero!". Pero es el esterilizador de agua que Patricio González muestra orgulloso, luego de haber obtenido en abril las patentes en Estados Unidos y Ecuador.
+        </p>
+        <p style="color:var(--text-muted);line-height:1.9;font-size:0.95rem;margin-bottom:1.5rem;">
+          Con este paso, la empresa ecuatoriana Ultravioleta está lista para abrirse espacio en otros mercados. En 2004 el sistema fue presentado en Caracas durante el Encuentro CAF por la competitividad.
+        </p>
+        <div style="background:rgba(123,47,255,0.1);border:1px solid var(--glass-border);padding:1.5rem;border-left:3px solid var(--uv-bright);">
+          <p style="color:var(--text);font-size:0.95rem;line-height:1.8;font-style:italic;">"Está comprobado el poder esterilizador de la luz ultravioleta" — Carlos Farhat, Médico Epidemiólogo, Municipalidad de Guayaquil.</p>
+        </div>
+      </div>
+    </div>
+
+    <div style="margin-top:2rem;padding-top:2rem;border-top:1px solid var(--glass-border);">
+      <p style="color:var(--text-muted);line-height:1.9;font-size:0.95rem;">
+        González, chileno radicado en Ecuador hace 30 años, está listo para incrementar las ventas locales y llevar su luz fuera del país.
+      </p>
+      <div style="margin-top:1.5rem;font-family:'Space Mono',monospace;font-size:0.7rem;color:var(--text-muted);letter-spacing:2px;">— GISELA RAYMOND, GUAYAQUIL</div>
+    </div>
+  </div>
+
+  <!-- PORTADA CAF -->
+  <div class="section-label">// Reconocimientos</div>
+  <h2 class="section-title">CAF Caracas 2004</h2>
+  <div class="section-line"></div>
+  <div style="background:var(--dark2);border:1px solid var(--glass-border);margin-bottom:4rem;display:grid;grid-template-columns:1fr 1fr;gap:0;align-items:center;">
+    <div style="padding:2.5rem;">
+      <p style="color:var(--text-muted);line-height:1.9;font-size:0.95rem;">En 2004, el sistema fue presentado en Caracas durante el Encuentro CAF por la Competitividad, posicionando a Ultravioleta S.A. como una de las empresas innovadoras de Ecuador con proyección internacional.</p>
+    </div>
+    <div style="padding:1.5rem;text-align:center;">
+      <img src="images/portada.jpg" alt="Portada CAF Caracas 2004" style="max-width:60%;height:auto;display:block;margin:0 auto;border:1px solid var(--glass-border);">
+    </div>
+  </div>
+
+  <!-- GALLERY -->
+  <div class="section-label">// Galería</div>
+  <h2 class="section-title">Imágenes</h2>
+  <div class="section-line"></div>
+  <div class="grid-4">
+    <img src="images/1.jpg" alt="UV cisterna" class="gallery-img">
+    <img src="images/2.jpg" alt="UV botellón" class="gallery-img">
+    <img src="images/3.jpg" alt="UV sistema" class="gallery-img">
+    <img src="images/4.jpg" alt="UV agua" class="gallery-img">
+  </div>
+</div>
+
+<div id="footer-placeholder"></div>
+<script src="nav.js"></script>
+<script>renderNav('noticias.html'); renderFooter();</script>
+</body>
+</html>
