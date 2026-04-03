@@ -96,15 +96,13 @@ h1,h2,h3,h4 {
 ══════════════════════════════ */
 .navbar {
   position:fixed; top:0; left:0; right:0; z-index:999;
-  padding:1.5rem 0; transition:var(--t);
+  padding:1.5rem 0; transition:transform .4s ease, opacity .4s ease;
   background:transparent;
+  transform:translateY(0); opacity:1;
 }
-.navbar.con-fondo {
-  background:rgba(4,4,15,.92);
-  backdrop-filter:blur(24px);
-  -webkit-backdrop-filter:blur(24px);
-  border-bottom:1px solid var(--borde);
-  padding:1rem 0;
+.navbar.oculto {
+  transform:translateY(-100%);
+  opacity:0;
 }
 .nav-inner {
   display:flex; align-items:center; justify-content:space-between;

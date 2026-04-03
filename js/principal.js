@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const navbar = document.getElementById('navbar');
   if (navbar) {
     const manejarScroll = () => {
-      navbar.classList.toggle('con-fondo', window.scrollY > 60);
+      navbar.classList.toggle('oculto', window.scrollY > 60);
     };
     window.addEventListener('scroll', manejarScroll, { passive: true });
     manejarScroll();
