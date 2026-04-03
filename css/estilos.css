@@ -96,14 +96,15 @@ h1,h2,h3,h4 {
 ══════════════════════════════ */
 .navbar {
   position:fixed; top:0; left:0; right:0; z-index:999;
-  padding:1.5rem 0; transition:var(--t);
-}
-.navbar.con-fondo {
-  background:rgba(4,4,15,.9);
+  padding:1rem 0; transition:var(--t);
+  background:rgba(4,4,15,.92);
   backdrop-filter:blur(24px);
   -webkit-backdrop-filter:blur(24px);
   border-bottom:1px solid var(--borde);
-  padding:1rem 0;
+}
+.navbar.con-fondo {
+  background:rgba(4,4,15,.97);
+  border-bottom:1px solid var(--borde-2);
 }
 .nav-inner {
   display:flex; align-items:center; justify-content:space-between;
