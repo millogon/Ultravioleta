@@ -109,7 +109,7 @@ h1,h2,h3,h4 {
   display:flex; align-items:center; justify-content:space-between;
   width:90%; max-width:1200px; margin:0 auto;
 }
-.nav-logo img { height:58px; width:auto; transition:var(--t); border-radius:8px; padding:5px 12px; background:#fff; }
+.nav-logo img { height:68px; width:auto; transition:var(--t); border-radius:8px; padding:5px 12px; background:#fff; }
 .nav-logo:hover img { opacity:.85; }
 
 .nav-links { display:flex; align-items:center; gap:.2rem; }
