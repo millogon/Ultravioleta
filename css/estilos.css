@@ -108,7 +108,7 @@ h1,h2,h3,h4 {
   display:flex; align-items:center; justify-content:space-between;
   width:90%; max-width:1200px; margin:0 auto;
 }
-.nav-logo img { height:88px; width:auto; transition:var(--t); border-radius:8px; padding:5px 12px; background:#fff; }
+.nav-logo img { height:88px; width:auto; transition:var(--t); mix-blend-mode:screen; }
 .nav-logo:hover img { opacity:.85; }
 
 .nav-links { display:flex; align-items:center; gap:.2rem; }
@@ -139,13 +139,14 @@ h1,h2,h3,h4 {
   text-shadow:none;
 }
 .nav-links li a.activo::after { display:none; }
-.nav-cta {
+.nav-cta { transition:var(--t) !important; }
+.nav-cta:hover { transform:translateY(-2px); }
+.nav-cta.activo {
   background:linear-gradient(135deg,var(--uv),var(--uv-claro)) !important;
-  color:#fff !important; padding:.5rem 1.3rem !important;
-  box-shadow:0 0 0 rgba(108,63,212,0);
-  transition:var(--t) !important;
+  color:#fff !important;
+  box-shadow:0 6px 24px rgba(108,63,212,.5) !important;
+  text-shadow:none;
 }
-.nav-cta:hover { box-shadow:0 6px 24px rgba(108,63,212,.5) !important; transform:translateY(-1px); }
 
 .hamburguesa {
   display:none; flex-direction:column; gap:5px;
