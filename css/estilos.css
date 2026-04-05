@@ -108,7 +108,7 @@ h1,h2,h3,h4 {
   display:flex; align-items:center; justify-content:space-between;
   width:90%; max-width:1200px; margin:0 auto;
 }
-.nav-logo img { height:88px; width:auto; transition:var(--t); mix-blend-mode:multiply; }
+.nav-logo img { height:88px; width:auto; transition:var(--t); }
 .nav-logo:hover img { opacity:.85; }
 
 .nav-links { display:flex; align-items:center; gap:.2rem; }
