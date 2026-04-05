@@ -113,17 +113,32 @@ h1,h2,h3,h4 {
 
 .nav-links { display:flex; align-items:center; gap:.2rem; }
 .nav-links li a {
+  position:relative;
   padding:.5rem 1rem; border-radius:50px;
   font-size:.88rem; font-weight:600;
   color:#fff;
   text-shadow:0 1px 6px rgba(0,0,0,.8);
-  transition:var(--t);
+  transition:transform .25s ease, background .25s ease, box-shadow .25s ease;
 }
-.nav-links li a:hover,
+.nav-links li a::after {
+  content:''; position:absolute; bottom:4px; left:50%; right:50%;
+  height:2px; border-radius:2px;
+  background:linear-gradient(90deg,var(--cian),var(--uv-claro));
+  transition:left .25s ease, right .25s ease;
+}
+.nav-links li a:hover {
+  transform:translateY(-2px);
+  background:rgba(255,255,255,.1);
+}
+.nav-links li a:hover::after {
+  left:18%; right:18%;
+}
 .nav-links li a.activo {
-  color:var(--blanco);
-  background:var(--vidrio-2);
+  background:linear-gradient(135deg,var(--uv),var(--uv-claro));
+  box-shadow:0 0 14px rgba(108,63,212,.55);
+  text-shadow:none;
 }
+.nav-links li a.activo::after { display:none; }
 .nav-cta {
   background:linear-gradient(135deg,var(--uv),var(--uv-claro)) !important;
   color:#fff !important; padding:.5rem 1.3rem !important;
