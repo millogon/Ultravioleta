@@ -71,7 +71,7 @@
             <div class="dato-icono">📧</div>
             <div class="dato-texto">
               <h4>Correo electrónico</h4>
-              <p>info@ultravioleta.com.ec</p>
+              <p>info@ultravioleta.org</p>
             </div>
           </div>
 
@@ -175,7 +175,7 @@
         <div class="pie-seccion">
           <h4>Contacto</h4>
           <div class="dato-pie">📍 <span>Guayaquil, Ecuador</span></div>
-          <div class="dato-pie">📧 <span>info@ultravioleta.com.ec</span></div>
+          <div class="dato-pie">📧 <span>info@ultravioleta.org</span></div>
           <div class="dato-pie">📞 <span>+593 4 000-0000</span></div>
         </div>
       </div>
@@ -187,5 +187,29 @@
   </footer>
 
   <script src="js/principal.js"></script>
+  <script>
+    document.getElementById('formulario-contacto').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const btn = this.querySelector('button[type="submit"]');
+      btn.disabled = true;
+      btn.textContent = 'Enviando...';
+
+      const data = new FormData(this);
+      fetch('send-mail.php', { method: 'POST', body: data })
+        .then(r => r.json())
+        .then(res => {
+          btn.textContent = res.success ? '✓ Mensaje enviado' : 'Enviar mensaje';
+          btn.style.background = res.success ? 'linear-gradient(135deg,#1a6b3a,#2d9b5c)' : '';
+          btn.disabled = false;
+          alert(res.message);
+          if (res.success) this.reset();
+        })
+        .catch(() => {
+          btn.textContent = 'Enviar mensaje';
+          btn.disabled = false;
+          alert('Error de conexión. Por favor intente nuevamente.');
+        });
+    });
+  </script>
 </body>
 </html>

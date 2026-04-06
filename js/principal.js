@@ -126,22 +126,5 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // ── Formulario de contacto (prevención básica) ──
-  const formulario = document.getElementById('formulario-contacto');
-  if (formulario) {
-    formulario.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const btn = formulario.querySelector('button[type="submit"]');
-      btn.textContent = '✓ Mensaje enviado';
-      btn.disabled = true;
-      btn.style.background = 'linear-gradient(135deg,#1a6b3a,#2d9b5c)';
-      setTimeout(() => {
-        btn.textContent = 'Enviar mensaje';
-        btn.disabled = false;
-        btn.style.background = '';
-        formulario.reset();
-      }, 4000);
-    });
-  }
 
 });
