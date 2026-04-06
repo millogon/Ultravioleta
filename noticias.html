@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noticias — Ultravioleta S.A.</title>
+  <meta name="description" content="Noticias, entrevistas y cobertura de prensa sobre Ultravioleta S.A. y su tecnología de esterilización UV.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="imagenes/LOGO ULTRAVIOLETA.png" alt="Ultravioleta S.A.">
+      </a>
+      <button class="hamburguesa" id="hamburguesa" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="noticias.html">Noticias</a></li>
+        <li><a href="preguntas-frecuentes.html">Preguntas Frecuentes</a></li>
+        <li><a href="contacto.html" class="nav-cta">Contáctenos</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ENCABEZADO -->
+  <header class="encabezado-pagina">
+    <span class="etiqueta">Prensa y medios</span>
+    <h1>Noticias y <span class="acento-uv">Entrevistas</span></h1>
+    <p>Cobertura de medios nacionales e internacionales sobre la innovación de Ultravioleta S.A.</p>
+  </header>
+
+  <!-- NOTICIA DESTACADA -->
+  <section class="seccion-pad" style="background:var(--negro);">
+    <div class="contenedor">
+
+      <div class="noticia-destacada revelar">
+        <div class="nd-foto" style="display:flex;flex-direction:column;background:#0a0a1f;">
+          <img src="imagenes/articulo.jpg" alt="Artículo Se le prendió el foco" style="flex:1;min-height:0;object-fit:contain;width:100%;padding:.75rem;">
+          <div style="border-top:1px solid rgba(255,255,255,.08);padding:.6rem;display:flex;justify-content:center;background:#060612;">
+            <img src="imagenes/portada.png" alt="Portada América Economía" style="height:110px;object-fit:contain;">
+          </div>
+        </div>
+        <div class="nd-cuerpo">
+          <span class="etiqueta">Artículo Principal</span>
+          <h2>"Se le prendió el foco"</h2>
+          <p>
+            Patricio González, ingeniero mecánico y fundador de Ultravioleta S.A., obtuvo la patente
+            en Estados Unidos y Ecuador para su innovadora lámpara esterilizadora de agua. El invento
+            que nació de años de investigación hoy es una empresa ecuatoriana lista para conquistar
+            mercados internacionales.
+          </p>
+          <p>
+            La solución elimina el 99.9% de microorganismos sin químicos, con un consumo eléctrico
+            mínimo de apenas 30 watts — equivalent a dejar una bombilla encendida.
+          </p>
+          <a href="contacto.html" class="btn-contorno">Contactar al equipo →</a>
+        </div>
+      </div>
+
+      <!-- Entrevistas -->
+      <div style="margin-top:5rem;">
+        <div class="cabecera-seccion revelar">
+          <span class="etiqueta">Entrevistas</span>
+          <h2>En los <span class="acento">medios</span></h2>
+        </div>
+
+        <div class="grid-noticias">
+
+          <div class="tarjeta-noticia revelar">
+            <div class="nt-foto" style="background:#0a0a1f;display:flex;align-items:center;justify-content:center;">
+              <img src="imagenes/portada.jpg" alt="Portada América Economía" style="object-fit:contain;width:100%;height:100%;padding:.5rem;">
+            </div>
+            <div class="nt-cuerpo">
+              <div class="nt-categoria">América Economía</div>
+              <h3>Portada: "Se le prendió el foco"</h3>
+              <p>Ultravioleta S.A. en la portada de la revista América Economía. Reconocimiento internacional a la innovación ecuatoriana en esterilización de agua.</p>
+              <div style="margin-top:1rem;">
+                <span class="btn-contorno" style="font-size:.78rem;padding:.45rem 1rem;">Portada</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="tarjeta-noticia revelar">
+            <div class="nt-foto">
+              <img src="imagenes/Ultravioleta.jpg" alt="Entrevista América Economía">
+            </div>
+            <div class="nt-cuerpo">
+              <div class="nt-categoria">América Economía</div>
+              <h3>Ultravioleta S.A.: Innovación ecuatoriana con impacto global</h3>
+              <p>Entrevista con el fundador sobre el proceso de patentamiento internacional y los planes de expansión hacia mercados latinoamericanos.</p>
+              <div style="margin-top:1rem;">
+                <span class="btn-contorno" style="font-size:.78rem;padding:.45rem 1rem;">Entrevista</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="tarjeta-noticia revelar">
+            <div class="nt-foto">
+              <img src="imagenes/Lampara1.jpg" alt="Tecnología UV">
+            </div>
+            <div class="nt-cuerpo">
+              <div class="nt-categoria">Tecnología</div>
+              <h3>¿Cómo funciona la esterilización UV y por qué es superior al cloro?</h3>
+              <p>Análisis técnico sobre la efectividad de la luz ultravioleta frente a los métodos tradicionales de desinfección de agua potable.</p>
+              <div style="margin-top:1rem;">
+                <a href="preguntas-frecuentes.html" class="btn-contorno" style="font-size:.78rem;padding:.45rem 1rem;">Leer más →</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="tarjeta-noticia revelar">
+            <div class="nt-foto">
+              <img src="imagenes/Ultravioleta_Cisterna.jpg" alt="Cisterna UV">
+            </div>
+            <div class="nt-cuerpo">
+              <div class="nt-categoria">Industria</div>
+              <h3>Soluciones UV para agua industrial: el caso Ultravioleta S.A.</h3>
+              <p>Cómo empresas del sector acuícola, alimenticio y farmacéutico en Ecuador han adoptado la tecnología UV para garantizar agua de calidad.</p>
+              <div style="margin-top:1rem;">
+                <span class="btn-contorno" style="font-size:.78rem;padding:.45rem 1rem;">Reportaje</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="tarjeta-noticia revelar">
+            <div class="nt-foto">
+              <img src="imagenes/agua.jpg" alt="Agua pura">
+            </div>
+            <div class="nt-cuerpo">
+              <div class="nt-categoria">Salud</div>
+              <h3>Agua segura sin cloro: la revolución silenciosa del UV en hogares ecuatorianos</h3>
+              <p>La tecnología que por décadas fue exclusiva de grandes industrias llega al hogar ecuatoriano a un costo accesible y de fácil mantenimiento.</p>
+              <div style="margin-top:1rem;">
+                <a href="contacto.html" class="btn-contorno" style="font-size:.78rem;padding:.45rem 1rem;">Contactar →</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="tarjeta-noticia revelar">
+            <div class="nt-foto">
+              <img src="imagenes/Compuerta.jpg" alt="Sistema de agua">
+            </div>
+            <div class="nt-cuerpo">
+              <div class="nt-categoria">Emprendimiento</div>
+              <h3>Patente en EE.UU.: el logro del ingeniero guayaquileño que purifica el agua con luz</h3>
+              <p>La historia detrás de la innovación: años de investigación, pruebas de laboratorio y el reconocimiento internacional que siguió.</p>
+              <div style="margin-top:1rem;">
+                <span class="btn-contorno" style="font-size:.78rem;padding:.45rem 1rem;">Leer historia</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="tarjeta-noticia revelar">
+            <div class="nt-foto">
+              <img src="imagenes/Bajando_Ultra.jpg" alt="Instalación sistema UV">
+            </div>
+            <div class="nt-cuerpo">
+              <div class="nt-categoria">Medio Ambiente</div>
+              <h3>Sin químicos: el impacto ambiental positivo de la esterilización UV</h3>
+              <p>A diferencia del cloro y el ozono, la tecnología UV no genera subproductos tóxicos, haciendo del agua tratada también segura para el medioambiente.</p>
+              <div style="margin-top:1rem;">
+                <a href="preguntas-frecuentes.html" class="btn-contorno" style="font-size:.78rem;padding:.45rem 1rem;">Saber más →</a>
+              </div>
+            </div>
+          </div>
+
+</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="seccion-cta">
+    <div class="cta-fondo"></div>
+    <div class="contenedor">
+      <div class="revelar">
+        <h2>¿Quieres saber más sobre<br><span class="acento">nuestra tecnología</span>?</h2>
+        <p>Visita nuestras preguntas frecuentes o contáctenos directamente.</p>
+        <div class="cta-btns">
+          <a href="preguntas-frecuentes.html" class="btn-primario">Preguntas Frecuentes</a>
+          <a href="contacto.html" class="btn-secundario">Contáctenos</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="pie-pagina">
+    <div class="contenedor">
+      <div class="grid-pie">
+        <div class="pie-marca">
+          <img src="imagenes/LOGO ULTRAVIOLETA.png" alt="Logo Ultravioleta S.A.">
+          <p>Ultravioleta S.A. — Esterilización de aguas con tecnología UV. Guayaquil, Ecuador.</p>
+        </div>
+        <div class="pie-seccion">
+          <h4>Navegación</h4>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="noticias.html">Noticias</a></li>
+            <li><a href="preguntas-frecuentes.html">Preguntas Frecuentes</a></li>
+            <li><a href="contacto.html">Contáctenos</a></li>
+          </ul>
+        </div>
+        <div class="pie-seccion">
+          <h4>Contacto</h4>
+          <div class="dato-pie">📍 <span>Guayaquil, Ecuador</span></div>
+          <div class="dato-pie">📧 <span>info@ultravioleta.org</span></div>
+          <div class="dato-pie">📞 <span>+593 4 000-0000</span></div>
+        </div>
+      </div>
+      <div class="pie-fondo">
+        <p>© <span id="anio"></span> Ultravioleta S.A. Todos los derechos reservados. Patente USA &amp; Ecuador.</p>
+        <p>Tecnología UV · Guayaquil</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/principal.js"></script>
+</body>
+</html>

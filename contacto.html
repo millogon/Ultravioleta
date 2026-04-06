@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contáctenos — Ultravioleta S.A.</title>
+  <meta name="description" content="Contáctenos para asesoría personalizada sobre esterilización UV de aguas. Ultravioleta S.A., Guayaquil, Ecuador.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="imagenes/LOGO ULTRAVIOLETA.png" alt="Ultravioleta S.A.">
+      </a>
+      <button class="hamburguesa" id="hamburguesa" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="noticias.html">Noticias</a></li>
+        <li><a href="preguntas-frecuentes.html">Preguntas Frecuentes</a></li>
+        <li><a href="contacto.html" class="nav-cta">Contáctenos</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ENCABEZADO -->
+  <header class="encabezado-pagina">
+    <span class="etiqueta">Estamos aquí para ayudarle</span>
+    <h1>Contác<span class="acento-uv">tenos</span></h1>
+    <p>Asesoría personalizada sin costo. Responderemos a la brevedad posible.</p>
+  </header>
+
+  <!-- CONTACTO -->
+  <section class="seccion-pad" style="background:var(--negro);">
+    <div class="contenedor">
+      <div class="grid-contacto">
+
+        <!-- Info de contacto -->
+        <div class="info-contacto revelar-izq">
+          <h2>Hablemos sobre su<br><span class="acento">proyecto</span></h2>
+          <p>
+            Cuéntenos sus necesidades de tratamiento de agua y le recomendaremos
+            la solución UV ideal para su hogar, negocio o industria, sin compromiso.
+          </p>
+
+          <div class="dato-contacto">
+            <div class="dato-icono">📍</div>
+            <div class="dato-texto">
+              <h4>Dirección</h4>
+              <p>Guayaquil, Ecuador</p>
+            </div>
+          </div>
+
+          <div class="dato-contacto">
+            <div class="dato-icono">📞</div>
+            <div class="dato-texto">
+              <h4>Teléfono</h4>
+              <p>+593 4 000-0000</p>
+            </div>
+          </div>
+
+          <div class="dato-contacto">
+            <div class="dato-icono">📧</div>
+            <div class="dato-texto">
+              <h4>Correo electrónico</h4>
+              <p>info@ultravioleta.org</p>
+            </div>
+          </div>
+
+          <div class="dato-contacto">
+            <div class="dato-icono">⏰</div>
+            <div class="dato-texto">
+              <h4>Horario de atención</h4>
+              <p>Lunes a Viernes: 8:00 – 18:00<br>Sábado: 9:00 – 13:00</p>
+            </div>
+          </div>
+
+          <!-- Imagen ambiental -->
+          <div style="margin-top:2rem;border-radius:var(--radio);overflow:hidden;border:1px solid var(--borde);">
+            <img src="imagenes/Contactenos.jpg" alt="Ultravioleta S.A. Contacto" style="width:100%;height:220px;object-fit:cover;">
+          </div>
+        </div>
+
+        <!-- Formulario -->
+        <div class="formulario-contacto revelar-der">
+          <h3>Envíenos un mensaje</h3>
+          <form id="formulario-contacto">
+
+            <div class="fila-doble">
+              <div class="grupo-campo">
+                <label for="nombre">Nombre completo *</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Juan García" required>
+              </div>
+              <div class="grupo-campo">
+                <label for="empresa">Empresa / Negocio</label>
+                <input type="text" id="empresa" name="empresa" placeholder="Mi empresa S.A.">
+              </div>
+            </div>
+
+            <div class="fila-doble">
+              <div class="grupo-campo">
+                <label for="correo">Correo electrónico *</label>
+                <input type="email" id="correo" name="correo" placeholder="juan@ejemplo.com" required>
+              </div>
+              <div class="grupo-campo">
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="+593 9 000-0000">
+              </div>
+            </div>
+
+            <div class="grupo-campo">
+              <label for="tipo">Tipo de aplicación</label>
+              <select id="tipo" name="tipo">
+                <option value="" disabled selected>Seleccione una opción</option>
+                <option value="residencial">Residencial / Hogar</option>
+                <option value="comercial">Comercial / Negocio</option>
+                <option value="industrial">Industrial / Fábrica</option>
+                <option value="acuacultura">Acuacultura / Granjas</option>
+                <option value="hospital">Hospital / Salud</option>
+                <option value="otro">Otro</option>
+              </select>
+            </div>
+
+            <div class="grupo-campo">
+              <label for="volumen">Volumen aproximado de agua (m³)</label>
+              <input type="text" id="volumen" name="volumen" placeholder="Ej: 10 m³, 50 m³, más de 100 m³">
+            </div>
+
+            <div class="grupo-campo">
+              <label for="mensaje">Mensaje *</label>
+              <textarea id="mensaje" name="mensaje" placeholder="Cuéntenos sobre su proyecto o necesidad de agua..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn-primario" style="width:100%;justify-content:center;font-size:1rem;padding:1rem;">
+              Enviar mensaje
+            </button>
+
+            <p class="aviso-form">
+              Sus datos son confidenciales y no serán compartidos con terceros.
+            </p>
+
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="pie-pagina">
+    <div class="contenedor">
+      <div class="grid-pie">
+        <div class="pie-marca">
+          <img src="imagenes/LOGO ULTRAVIOLETA.png" alt="Logo Ultravioleta S.A.">
+          <p>Ultravioleta S.A. — Esterilización de aguas con tecnología UV. Guayaquil, Ecuador.</p>
+        </div>
+        <div class="pie-seccion">
+          <h4>Navegación</h4>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="noticias.html">Noticias</a></li>
+            <li><a href="preguntas-frecuentes.html">Preguntas Frecuentes</a></li>
+            <li><a href="contacto.html">Contáctenos</a></li>
+          </ul>
+        </div>
+        <div class="pie-seccion">
+          <h4>Contacto</h4>
+          <div class="dato-pie">📍 <span>Guayaquil, Ecuador</span></div>
+          <div class="dato-pie">📧 <span>info@ultravioleta.org</span></div>
+          <div class="dato-pie">📞 <span>+593 4 000-0000</span></div>
+        </div>
+      </div>
+      <div class="pie-fondo">
+        <p>© <span id="anio"></span> Ultravioleta S.A. Todos los derechos reservados. Patente USA &amp; Ecuador.</p>
+        <p>Tecnología UV · Guayaquil</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/principal.js"></script>
+  <script>
+    document.getElementById('formulario-contacto').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const btn = this.querySelector('button[type="submit"]');
+      btn.disabled = true;
+      btn.textContent = 'Enviando...';
+
+      const data = new FormData(this);
+      fetch('send-mail.php', { method: 'POST', body: data })
+        .then(r => r.json())
+        .then(res => {
+          btn.textContent = res.success ? '✓ Mensaje enviado' : 'Enviar mensaje';
+          btn.style.background = res.success ? 'linear-gradient(135deg,#1a6b3a,#2d9b5c)' : '';
+          btn.disabled = false;
+          alert(res.message);
+          if (res.success) this.reset();
+        })
+        .catch(() => {
+          btn.textContent = 'Enviar mensaje';
+          btn.disabled = false;
+          alert('Error de conexión. Por favor intente nuevamente.');
+        });
+    });
+  </script>
+</body>
+</html>
