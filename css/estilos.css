@@ -330,6 +330,10 @@ h1,h2,h3,h4 {
   display:grid; grid-template-columns:1fr 1fr;
   gap:5rem; align-items:center;
 }
+.sobre-texto-full { width:100%; margin-bottom:3rem; }
+.foto-full { width:100%; text-align:center; }
+.foto-full img { width:100%; max-height:500px; object-fit:cover; border-radius:12px; }
+.foto-titulo { margin-top:1rem; color:rgba(255,255,255,.7); font-size:1rem; font-style:italic; }
 .sobre-texto h2 { font-size:clamp(2rem,4vw,3rem); margin-bottom:1.5rem; }
 .sobre-texto p { color:rgba(255,255,255,.6); margin-bottom:1.1rem; line-height:1.85; }
 .sobre-texto .btn-contorno { margin-top:.5rem; }
