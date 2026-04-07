@@ -331,9 +331,13 @@ h1,h2,h3,h4 {
   gap:5rem; align-items:center;
 }
 .sobre-texto-full { width:100%; margin-bottom:3rem; }
-.foto-full { width:100%; text-align:center; }
-.foto-full img { width:100%; max-height:500px; object-fit:cover; border-radius:12px; }
-.foto-titulo { margin-top:1rem; color:rgba(255,255,255,.7); font-size:1rem; font-style:italic; }
+.sobre-texto-full h2 { font-size:clamp(2rem,4vw,3rem); margin-bottom:1.5rem; }
+.sobre-texto-full p { color:rgba(255,255,255,.6); margin-bottom:1.1rem; line-height:1.85; }
+.foto-full { width:100%; display:flex; justify-content:center; margin-top:2rem; }
+.foto-card { position:relative; width:500px; max-width:100%; border-radius:16px; overflow:hidden; box-shadow:0 8px 32px rgba(0,0,0,.5); }
+.foto-card img { width:100%; display:block; }
+.foto-card .foto-overlay { position:absolute; bottom:0; left:0; right:0; padding:1rem 1.5rem; background:linear-gradient(transparent, rgba(0,0,0,.75)); }
+.foto-card .foto-overlay span { color:#fff; font-size:1rem; font-weight:600; letter-spacing:.05em; }
 .sobre-texto h2 { font-size:clamp(2rem,4vw,3rem); margin-bottom:1.5rem; }
 .sobre-texto p { color:rgba(255,255,255,.6); margin-bottom:1.1rem; line-height:1.85; }
 .sobre-texto .btn-contorno { margin-top:.5rem; }
