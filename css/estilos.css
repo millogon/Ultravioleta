@@ -108,7 +108,7 @@ h1,h2,h3,h4 {
   display:flex; align-items:center; justify-content:space-between;
   width:90%; max-width:1200px; margin:0 auto;
 }
-.nav-logo img { height:88px; width:auto; transition:var(--t); border-radius:8px; padding:5px 12px; background:#fff; }
+.nav-logo img { height:88px; width:auto; transition:var(--t); border-radius:8px; padding:5px 12px; }
 .nav-logo:hover img { opacity:.85; }
 
 .nav-links { display:flex; align-items:center; gap:.2rem; }
@@ -495,7 +495,7 @@ h1,h2,h3,h4 {
   display:grid; grid-template-columns:2fr 1fr 1fr;
   gap:3rem; margin-bottom:3rem;
 }
-.pie-marca img { height:58px; width:auto; margin-bottom:1.1rem; border-radius:8px; padding:5px 12px; background:#fff; }
+.pie-marca img { height:58px; width:auto; margin-bottom:1.1rem; border-radius:8px; padding:5px 12px; }
 .pie-marca p { color:rgba(255,255,255,.4); font-size:.875rem; line-height:1.75; max-width:270px; }
 .pie-seccion h4 {
   color:var(--blanco); font-size:.78rem; font-weight:700;
