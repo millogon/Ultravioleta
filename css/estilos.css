@@ -537,7 +537,7 @@ h1,h2,h3,h4 {
   pointer-events:none;
 }
 .encabezado-pagina h1 { font-size:clamp(2.5rem,5vw,4.5rem); margin-bottom:1rem; position:relative; z-index:1; }
-.encabezado-pagina p { color:rgba(255,255,255,.55); font-size:1.05rem; max-width:600px; margin:0 auto; position:relative; z-index:1; }
+.encabezado-pagina p { color:rgba(255,255,255,.9); font-size:1.05rem; max-width:600px; margin:0 auto; position:relative; z-index:1; }
 
 /* ══════════════════════════════
    PÁGINA PRODUCTOS
