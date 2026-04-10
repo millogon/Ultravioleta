@@ -745,4 +745,5 @@ h1,h2,h3,h4 {
   .hero-btns         { flex-direction:column; align-items:flex-start; }
   .cta-btns          { flex-direction:column; align-items:center; }
   .seccion-pad       { padding:70px 0; }
+  .foto-card         { width:100%; }
 }
