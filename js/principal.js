@@ -114,56 +114,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // ── Pantalla completa ──
-  const fs = document.documentElement;
-  const solicitar = () => {
-    if (fs.requestFullscreen) return fs.requestFullscreen();
-    if (fs.webkitRequestFullscreen) return fs.webkitRequestFullscreen();
-    if (fs.mozRequestFullScreen) return fs.mozRequestFullScreen();
-  };
-  const salir = () => {
-    if (document.exitFullscreen) document.exitFullscreen();
-    else if (document.webkitExitFullscreen) document.webkitExitFullscreen();
-    else if (document.mozCancelFullScreen) document.mozCancelFullScreen();
-  };
-
-  // Aviso inferior
-  const aviso = document.createElement('div');
-  aviso.id = 'fs-aviso';
-  aviso.innerHTML = '<span>⛶</span> Haz clic para pantalla completa';
-  document.body.appendChild(aviso);
-
-  // Botón X para salir
-  const btnSalir = document.createElement('button');
-  btnSalir.id = 'fs-salir';
-  btnSalir.innerHTML = '&#x2715;';
-  btnSalir.title = 'Salir de pantalla completa';
-  btnSalir.addEventListener('click', (e) => { e.stopPropagation(); salir(); });
-  document.body.appendChild(btnSalir);
-
-  // Primer clic en la página → fullscreen
-  let fsActivado = false;
-  document.addEventListener('click', function activarFS(e) {
-    if (e.target === btnSalir) return;
-    if (!fsActivado && !document.fullscreenElement) {
-      fsActivado = true;
-      solicitar();
-      document.removeEventListener('click', activarFS);
-    }
-  }, { once: false });
-
-  // Mostrar/ocultar botón X y aviso según estado
-  document.addEventListener('fullscreenchange', () => {
-    const enFS = !!document.fullscreenElement;
-    btnSalir.classList.toggle('visible', enFS);
-    aviso.classList.toggle('oculto', enFS);
-  });
-  document.addEventListener('webkitfullscreenchange', () => {
-    const enFS = !!document.webkitFullscreenElement;
-    btnSalir.classList.toggle('visible', enFS);
-    aviso.classList.toggle('oculto', enFS);
-  });
-
   // ── Año actual en footer ──
   const spanAnio = document.getElementById('anio');
   if (spanAnio) spanAnio.textContent = new Date().getFullYear();
